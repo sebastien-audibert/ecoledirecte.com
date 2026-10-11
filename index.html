@@ -954,9 +954,9 @@
 			============================================================ */
 			const CONFIG = {
 				// L'URL trompeuse où tu héberges cette page (celle qui pointe le QR Code).
-				fakeUrlFull: 'ent-connexion-eleves.netlify.app',
+				fakeUrlFull: 'https://sebastien-audibert.github.io/ecoledirecte.com/',
 				// Version tronquée telle qu'elle apparaît sur un petit écran mobile.
-				fakeUrlTruncated: 'ent-connexion-…',
+				fakeUrlTruncated: 'sebastien-audibert.github.io/ecoledirecte.com/…',
 				// Le vrai domaine légitime, pour la comparaison.
 				realDomain: 'ecoledirecte.com'
 			};
@@ -995,7 +995,7 @@
 				setTimeout(()=>{
 					/* On enregistre UNIQUEMENT l'horodatage. Le mot de passe saisi n'est jamais lu, jamais stocké, jamais transmis. */
 					//flLog.push({ ts: flNow() });
-					flLog.push({ ts: "<u>Horodatage:</u> "+flNow()+"  -  <u>Identifiant:</u> "+document.getElementById('flLogin').value.trim()+"  -  <u>Mot de passe:</u> "+flMasquerTexte(p) });
+					flLog.push({ ts: "<u>Horodatage:</u> "+flNow()+"<br/><u>Identifiant:</u> "+document.getElementById('flLogin').value.trim()+"<br/><u>Mot de passe:</u> "+flMasquerTexte(p) });
 					flSave(flLog); flRender();
 
 					/* Révélation pédagogique immédiate */
