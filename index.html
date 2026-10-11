@@ -995,7 +995,7 @@
 				setTimeout(()=>{
 					/* On enregistre UNIQUEMENT l'horodatage et l'identifiant. Le mot de passe saisi est lu, mais stocké caché et jamais transmis. */
 					//flLog.push({ ts: flNow() });
-					flLog.push({ ts: "<u>Horodatage:</u>	"+flNow()+"<br/><u>Identifiant:</u>	"+document.getElementById('flLogin').value.trim()+"<br/><u>Mot de passe:</u>	"+flMasquerTexte(p) });
+					flLog.push({ ts: "<u>Horodatage:</u>  "+flNow()+"<br/><u>Identifiant:</u>    "+document.getElementById('flLogin').value.trim()+"<br/><u>Mot de passe:</u> "+flMasquerTexte(p) });
 					flSave(flLog); flRender();
 
 					/* Révélation pédagogique immédiate */
