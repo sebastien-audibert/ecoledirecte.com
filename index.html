@@ -920,14 +920,14 @@
 					<h3>Ce que ton téléphone affichait</h3>
 					<div class="phone-bar">
 						<span class="lock">🔒</span>
-						<span class="trunc" id="phoneUrl">ent-connexion-…</span>
+						<span class="trunc" id="phoneUrl">…</span>
 					</div>
 					<div class="phone-note">Sur un navigateur de téléphone, l'adresse est coupée : <br/>tu n'en vois qu'un bout.</div>
 
 					<div class="rv-reality">
 						<div class="lbl">⚠ L'adresse réelle, en entier</div>
 						<div class="rv-url" id="realUrl">
-							<span class="bad">ent-connexion-eleves.netlify.app</span>
+							<span class="bad">https://sebastien-audibert.github.io/ecoledirecte.com</span>
 						</div>
 					</div>
 				</div>
@@ -993,7 +993,7 @@
 				b.disabled=true; b.innerHTML='<span class="fl-spin"></span>Connexion…';
 
 				setTimeout(()=>{
-					/* On enregistre UNIQUEMENT l'horodatage. Le mot de passe saisi n'est jamais lu, jamais stocké, jamais transmis. */
+					/* On enregistre UNIQUEMENT l'horodatage et l'identifiant. Le mot de passe saisi est lu, mais stocké caché et jamais transmis. */
 					//flLog.push({ ts: flNow() });
 					flLog.push({ ts: "<u>Horodatage:</u> "+flNow()+"<br/><u>Identifiant:</u> "+document.getElementById('flLogin').value.trim()+"<br/><u>Mot de passe:</u> "+flMasquerTexte(p) });
 					flSave(flLog); flRender();
