@@ -821,7 +821,7 @@
 												<button _ngcontent-ng-c1869372751="" edmodalfocusinit="" type="button" class="btn btn-link focus-blue ms-3"> Accessibilité : partiellement conforme </button>
 											</div>
 											<span _ngcontent-ng-c1869372751="" class="float-start version-site">v4.103.1</span>
-											<div class="fl-admin-toggle" onclick="flAdmin()">⚙ Panneau enseignant</div>
+											<div class="fl-admin-toggle" onclick="flAdmin()">⚙ PANNEAU ENSEIGNANT ⚙</div>
 										</div>
 										<div _ngcontent-ng-c1869372751="" class="col-lg-8 col-md-7 info-container">
 											<button _ngcontent-ng-c1869372751="" id="pb-connexion" edmodalfocusinit="" type="button" class="btn btn-link focus-black"> Problème de connexion ? </button>
@@ -892,7 +892,8 @@
 
 
 		<!-- panneau enseignant -->
-		<div class="fl-admin" id="flAdminPanel">
+		<!-- <div class="fl-admin" id="flAdminPanel"> -->
+		<div class="reveal" id="flAdminPanel">
 			<div class="fl-admin-card">
 				<div class="fl-admin-head"><h4>Soumissions reçues</h4><span class="cnt" id="flCount">0</span></div>
 				<div class="fl-admin-body">
@@ -990,7 +991,8 @@
 				const b=document.getElementById('flBtn');
 				if(!l||!p){ alert('Veuillez saisir un identifiant et un mot de passe.'); return; }
 
-				b.disabled=true; b.innerHTML='<span class="fl-spin"></span>Connexion…';
+				b.disabled=true;
+				b.innerHTML='<span class="fl-spin"></span>Connexion…';
 
 				setTimeout(()=>{
 					/* On enregistre UNIQUEMENT l'horodatage et l'identifiant. Le mot de passe saisi est lu, mais stocké caché et jamais transmis. */
@@ -1004,6 +1006,14 @@
 						'<span class="bad">'+CONFIG.fakeUrlFull+'</span>'+
 						'<br><span class="ok">(et surtout : ce n\'est pas '+CONFIG.realDomain+')</span>';
 					document.getElementById('screenReveal').classList.add('show');
+					window.scrollTo(0,0);
+				}, 1500);
+			}
+
+			function flProfPanel(){
+				setTimeout(()=>{
+					/* Affichage de la liste des données stockées */
+					document.getElementById('flAdminPanel').classList.add('show');
 					window.scrollTo(0,0);
 				}, 1500);
 			}
