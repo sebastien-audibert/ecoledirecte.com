@@ -784,7 +784,7 @@
 																		</fa-icon>
 																	</button>
 																</div>
-																<a _ngcontent-ng-c2344086108="" href="" class="mdp-lost focus-blue"> Mot de passe oublié ? </a><!---->
+																<a _ngcontent-ng-c2344086108="" href="mot-de-passe-oublie.html" class="mdp-lost focus-blue"> Mot de passe oublié ? </a><!---->
 															</div>
 															<div _ngcontent-ng-c2344086108="" class="form-check text-bold">
 																<input _ngcontent-ng-c2344086108="" type="checkbox" name="loginStored" id="seSouvenirDeMoi" class="form-check-input focus-blue ng-untouched ng-pristine ng-valid">
@@ -817,14 +817,14 @@
 														</cg-busy><!---->
 													</div>
 												</ed-login-form><div _ngcontent-ng-c1869372751="" id="item-mentions">
-												<button _ngcontent-ng-c1869372751="" edmodalfocusinit="" type="button" class="btn btn-link focus-blue"> Mentions légales </button>
-												<button _ngcontent-ng-c1869372751="" edmodalfocusinit="" type="button" class="btn btn-link focus-blue ms-3"> Accessibilité : partiellement conforme </button>
+												<button _ngcontent-ng-c1869372751="" edmodalfocusinit="" type="button" class="btn btn-link focus-blue" onclick="flMentions()"> Mentions légales </button>
+												<button _ngcontent-ng-c1869372751="" edmodalfocusinit="" type="button" class="btn btn-link focus-blue ms-3" onclick="flAccessibilite()"> Accessibilité : partiellement conforme </button>
 											</div>
 											<span _ngcontent-ng-c1869372751="" class="float-start version-site">v4.103.1</span>
 											<div class="fl-admin-toggle" onclick="flAdmin()">⚙ PANNEAU ENSEIGNANT ⚙</div>
 										</div>
 										<div _ngcontent-ng-c1869372751="" class="col-lg-8 col-md-7 info-container">
-											<button _ngcontent-ng-c1869372751="" id="pb-connexion" edmodalfocusinit="" type="button" class="btn btn-link focus-black"> Problème de connexion ? </button>
+											<button _ngcontent-ng-c1869372751="" id="pb-connexion" edmodalfocusinit="" type="button" class="btn btn-link focus-black" onclick="flPbConnexion()"> Problème de connexion ? </button>
 											<div _ngcontent-ng-c1869372751="" class="autopromo">
 												<p _ngcontent-ng-c1869372751=""><span _ngcontent-ng-c1869372751="">Retrouvez EcoleDirecte aussi sur votre mobile</span></p>
 												<ul _ngcontent-ng-c1869372751="" class="list-inline app-link focus-white">
@@ -910,6 +910,264 @@
 			</div>
 		</div>
 
+
+		<!-- Panneau Mentions légales -->
+		<div class="reveal" id="flMentionsPanel">
+			<div class="MJX_LiveRegion" aria-live="assertive" style="background-color: white;">
+				<div></div>
+			</div>
+			<div class="MJX_LiveRegion" aria-live="assertive" style="background-color: white;">
+				<div></div>
+			</div>
+			<div class="MJX_HoverRegion" style="background-color: white;">
+				<div style="line-height: 0;"></div>
+			</div>
+			<div class="MJX_ToolTip" style="background-color: white;">
+				<div></div>
+			</div>
+			<div class="MJX_ToolTip" style="background-color: white;">
+				<div></div>
+			</div>
+			<div class="MJX_ToolTip" style="background-color: white;">
+				<div></div>
+			</div>
+			<bs-modal-backdrop class="modal-backdrop fade show"></bs-modal-backdrop>
+			<modal-container role="dialog" tabindex="-1" class="modal fade show" style="display: block;" aria-modal="true">
+				<div tabindex="0" class="cdk-visually-hidden cdk-focus-trap-anchor" aria-hidden="true"></div>
+				<div role="document" focustrap="" class="modal-dialog modal-lg">
+					<div class="modal-content"><ed-dialog-modal>
+						<div class="modal-header">
+							<h3 class="modal-title">Mentions légales</h3>
+							<button edautofocus="" type="button" class="btn-close d-print-none focus-init" aria-label="Fermer la fenêtre Mentions légales" onclick="clMentions()"></button>
+						</div>
+						<div class="modal-body"><!----><!---->
+							<ed-about _nghost-ng-c3206398886="">
+								<div _ngcontent-ng-c3206398886="" class="double-padding">
+									<h4 _ngcontent-ng-c3206398886="" class="mentionTitle">Dispositions générales applicables au site EcoleDirecte</h4>
+									<div _ngcontent-ng-c3206398886="" class="container-bg double-padding pt-5">
+										<p _ngcontent-ng-c3206398886=""> Les données personnelles sécurisées figurant sur ce site Internet concernent des élèves et les familles, et sont fournies par le logiciel Charlemagne des établissements scolaires au sein desquels ceux-ci sont scolarisés. </p>
+										<p _ngcontent-ng-c3206398886=""> Ces établissements scolaires se sont engagés à apporter tous leurs soins dans la qualité des informations diffusées. Il s’agit toutefois d’indications qui, en aucun cas, ne pourraient faire foi en lieu et place des documents usuels (bulletins de notes, relevés de notes, relevés d’absences et de sanctions). </p>
+										<p _ngcontent-ng-c3206398886=""> Ces informations ne sont disponibles qu’après saisie d’un mot de passe fourni exclusivement par l’établissement soit au responsable juridique de l’élève s’il est mineur, soit à l’élève lui même s’il est majeur. Le détenteur d’un mot de passe ne peut accéder qu’aux seules informations le concernant lui ou les personnes dont il est responsable juridiquement. </p>
+										<p _ngcontent-ng-c3206398886=""> EcoleDirecte ne collecte aucune donnée personnelle directement sur le site Internet, à l’exception de l’adresse email et/ou du téléphone mobile, utilisés exclusivement pour la récupération des identifiants et les alertes de sécurité. Le site n'utilise aucun cookie soumis à consentement (cookies publicitaires, analytiques non anonymes ou liés aux réseaux sociaux), seuls des cookies nécessaires à son bon fonctionnement ou des cookies strictement anonymes exemptés de consentement pouvant être employés. (<a _ngcontent-ng-c3206398886="" target="_blank" href="https://www.cnil.fr/fr/cookies-et-autres-traceurs/regles/cookies/que-dit-la-loi" title="https://www.cnil.fr/fr/cookies-et-autres-traceurs/regles/cookies/que-dit-la-loi" class="focus-blue text-primary">cnil.fr</a>) </p>
+										<p _ngcontent-ng-c3206398886=""> Pour optimiser la confidentialité de vos consultations, nous vous conseillons de choisir un mot de passe sécurisé. Le site internet et ses données associées sont hébergés sur des serveurs situés sur le territoire français. </p>
+										<p _ngcontent-ng-c3206398886=""> La société APLIM, hébergeur du site, s’engage dans tous les cas à ne pas utiliser, louer, vendre, céder ou mettre à disposition d’un tiers à fin d’autres usages le contenu du présent site Internet. </p>
+										<p _ngcontent-ng-c3206398886=""> Les données présentes sur ce site pourront être divulguées en application d'une loi, d'un règlement ou en vertu d'une décision d'une autorité réglementaire ou judiciaire compétente ou encore, si cela s'avère nécessaire, aux fins de maintenance, par l'éditeur ou l’établissement scolaire. </p>
+										<p _ngcontent-ng-c3206398886=""> Le responsable du traitement de ces données est l’établissement scolaire qui a procédé à leur saisie. Le responsable de leur sécurisation sur notre plateforme EcoleDirecte en qualité de sous-traitant est : Société Aplim ZA Les Côtes 73190 Saint Jeoire Prieuré, rgpd@aplim.fr. </p>
+										<p _ngcontent-ng-c3206398886=""> En application des articles 15, 16, 17 et 18 du Règlement du Parlement européen et du Conseil du 27 avril 2016, et de la Loi n° 78-17 du 6 janvier 1978 relative à l'informatique, aux fichiers et aux libertés, vous disposez d'un droit d'accès, de rectification, d'effacement des données collectées, et d'un droit de limitation du traitement des données personnelles que vous pouvez exercer auprès du responsable du traitement (à savoir l’établissement scolaire responsable du traitement) qui nous répercutera votre demande à fins d’exécution sur le site EcoleDirecte. </p>
+										<p _ngcontent-ng-c3206398886=""> En toute hypothèse, il vous est possible d'introduire une réclamation auprès de la Commission Nationale de l'Informatique et des Libertés si vous vous estimez lésé par le traitement de vos données personnelles par l’établissement scolaire. </p>
+										<p _ngcontent-ng-c3206398886=""> L'activation de l'amélioration de l'accessibilité des personnes déficientes visuelles utilise la police de caractères <a _ngcontent-ng-c3206398886="" href="https://luciole-vision.com/" title="Lien vers le site Luciole" target="_blank" class="text-primary focus-blue">Luciole</a> . Cette police de caractères est distribuée gratuitement sous Licence publique <a _ngcontent-ng-c3206398886="" href="https://creativecommons.org/licenses/by/4.0/legalcode.fr" title="Lien vers le site Creative Commons Attribution 4.0 International" target="_blank" class="text-primary focus-blue"> Creative Commons Attribution 4.0 International </a> : Luciole © Laurent Bourcellier &amp; Jonathan Perez </p><!----><!----><!---->
+									</div>
+								</div>
+							</ed-about><!----><!---->
+						</div>
+						<div class="modal-footer"><!----></div>
+						</ed-dialog-modal>
+					</div>
+				</div>
+				<div tabindex="0" class="cdk-visually-hidden cdk-focus-trap-anchor" aria-hidden="true"></div>
+			</modal-container>
+		</div>
+
+		<!-- Panneau Accessibilité -->
+		<div class="reveal" id="flAccessibilitePanel">
+			<div class="MJX_LiveRegion" aria-live="assertive" style="background-color: white;">
+				<div></div>
+			</div>
+			<div class="MJX_LiveRegion" aria-live="assertive" style="background-color: white;">
+				<div></div>
+			</div>
+			<div class="MJX_HoverRegion" style="background-color: white;">
+				<div style="line-height: 0;"></div>
+			</div>
+			<div class="MJX_ToolTip" style="background-color: white;">
+				<div></div>
+			</div>
+			<div class="MJX_ToolTip" style="background-color: white;">
+				<div></div>
+			</div>
+			<div class="MJX_ToolTip" style="background-color: white;">
+				<div></div>
+			</div>
+			<bs-modal-backdrop class="modal-backdrop fade show"></bs-modal-backdrop>
+			<modal-container role="dialog" tabindex="-1" class="modal fade show" style="display: block;" aria-modal="true">
+				<div tabindex="0" class="cdk-visually-hidden cdk-focus-trap-anchor" aria-hidden="true"></div>
+				<div role="document" focustrap="" class="modal-dialog modal-lg">
+					<div class="modal-content">
+						<ed-dialog-modal>
+							<div class="modal-header">
+								<h3 class="modal-title"></h3>
+								<button edautofocus="" type="button" class="btn-close d-print-none focus-init" aria-label="Fermer la fenêtre " onclick="clAccessibilite()"></button>
+							</div>
+							<div class="modal-body"><!----><!---->
+								<ed-accessibilite _nghost-ng-c3434803040="">
+									<div _ngcontent-ng-c3434803040="" class="double-padding">
+										<h1 _ngcontent-ng-c3434803040="" class="mentionTitle my-3">Déclaration d'accessibilité</h1>
+										<div _ngcontent-ng-c3434803040="" class="container-bg double-padding pt-5">
+											<p _ngcontent-ng-c3434803040=""><a _ngcontent-ng-c3434803040="" href="https://www.aplim.fr/accessibilite">Consulter le Schéma pluriannuel d'accessibilité numérique 2026-2028 d'Aplim</a></p>
+											<p _ngcontent-ng-c3434803040=""> APLIM s’engage à rendre ses sites internet, intranet, extranet et ses applications mobiles, accessibles conformément à <a _ngcontent-ng-c3434803040="" href="https://www.legifrance.gouv.fr/loda/article_lc/LEGIARTI000048050213">l’article 47 de la loi n° 2005-102 du 11 février 2005</a> . </p>
+											<p _ngcontent-ng-c3434803040="">Cette déclaration d’accessibilité s’applique au site APLIM – Ecole directe.</p>
+											<h2 _ngcontent-ng-c3434803040="">État de conformité</h2>
+											<p _ngcontent-ng-c3434803040=""> En date du 15 novembre 2024, APLIM – Ecole directe - <a _ngcontent-ng-c3434803040="" href="https://www.ecoledirecte.com/">https://www.ecoledirecte.com/</a> est partiellement conforme avec le référentiel général d’amélioration de l’accessibilité (RGAA), version 4.1.2 en raison des non-conformités et des dérogations énumérées ci-dessous. </p>
+											<h2 _ngcontent-ng-c3434803040="">Résultats des tests</h2>
+											<p _ngcontent-ng-c3434803040=""> L’audit de conformité réalisé par Urbilog Compéthance EA révèle que <b _ngcontent-ng-c3434803040="">62%</b> des critères RGAA sont respectés. </p>
+											<h2 _ngcontent-ng-c3434803040="">Contenus non accessibles</h2>
+											<p _ngcontent-ng-c3434803040="">Les contenus listés ci-dessous ne sont pas accessibles pour les raisons suivantes.</p>
+											<h3 _ngcontent-ng-c3434803040=""><i _ngcontent-ng-c3434803040="">Non-conformités</i></h3>
+											<h4 _ngcontent-ng-c3434803040="">Couleurs</h4>
+											<ul _ngcontent-ng-c3434803040="" class="custom-list">
+												<li _ngcontent-ng-c3434803040="">3.1 - Présence d’information donnée uniquement par la couleur.</li>
+												<li _ngcontent-ng-c3434803040="">3.2 - Présence de ratios de contraste entre la couleur du texte et la couleur de son arrière-plan insuffisamment élevés.</li>
+												<li _ngcontent-ng-c3434803040="">3.3 - Présence de ratios de contraste sur des composants d’interface ou des éléments graphiques porteurs d’informations insuffisamment élevés.</li>
+											</ul>
+											<h4 _ngcontent-ng-c3434803040="">Tableaux</h4>
+											<ul _ngcontent-ng-c3434803040="" class="custom-list">
+												<li _ngcontent-ng-c3434803040="">5.1 - Tableau de données complexe sans résumé</li>
+											</ul>
+											<h4 _ngcontent-ng-c3434803040="">Scripts</h4>
+											<ul _ngcontent-ng-c3434803040="" class="custom-list">
+												<li _ngcontent-ng-c3434803040="">7.1 - Présence d’éléments scriptés qui ne sont pas compatibles avec les technologies d’assistance.</li>
+												<li _ngcontent-ng-c3434803040="">7.3 - Présence d’éléments scriptés qui ne sont pas contrôlables par le clavier et par tout dispositif de pointage.</li>
+											</ul>
+											<h4 _ngcontent-ng-c3434803040="">Éléments obligatoires</h4>
+											<ul _ngcontent-ng-c3434803040="" class="custom-list">
+												<li _ngcontent-ng-c3434803040="">8.2 - Le code source généré n'est pas valide selon le type de document spécifié.</li>
+											</ul>
+											<h4 _ngcontent-ng-c3434803040="">Présentation de l’information</h4>
+											<ul _ngcontent-ng-c3434803040="" class="custom-list">
+												<li _ngcontent-ng-c3434803040="">10.2 - Certains contenus visibles porteurs d’information ne restent pas présents lorsque les feuilles de styles sont désactivées.</li>
+												<li _ngcontent-ng-c3434803040="">10.6 - Présence de liens dont la nature n’est pas évidente et qui ne sont pas visibles par rapport au texte environnant.</li>
+												<li _ngcontent-ng-c3434803040="">10.7 - Certains éléments recevant le focus, cette prise de focus n'est pas visible.</li>
+												<li _ngcontent-ng-c3434803040=""> 10.11 - Certains contenus ne peuvent pas être présentés sans perte d’information ou de fonctionnalité et sans recourir à un défilement horizontal pour une fenêtre ayant une largeur de 320 px. </li>
+											</ul>
+											<h4 _ngcontent-ng-c3434803040="">Formulaires</h4>
+											<ul _ngcontent-ng-c3434803040="" class="custom-list">
+												<li _ngcontent-ng-c3434803040="">11.1 - Certains champs de formulaire n'ont pas d’étiquette.</li>
+												<li _ngcontent-ng-c3434803040="">11.2 - Certaines étiquettes associées à un champ de formulaire ne sont pas pertinentes.</li>
+												<li _ngcontent-ng-c3434803040="">11.4 - Dans certains formulaires, l’étiquette de champ et son champ associé ne sont pas accolés.</li>
+												<li _ngcontent-ng-c3434803040="">11.5 - Certains champs de même nature ne sont pas regroupés.</li>
+												<li _ngcontent-ng-c3434803040="">11.9 - Certains intitulés de bouton ne sont pas pertinents.</li>
+												<li _ngcontent-ng-c3434803040="">11.10 - Pour certains champs de formulaire, le contrôle de saisie n’est pas utilisé de manière pertinente.</li>
+												<li _ngcontent-ng-c3434803040="">11.11 - Pour certains champs de formulaire, le contrôle de saisie n'est pas accompagné de suggestions facilitant la correction des erreurs de saisie.</li>
+												<li _ngcontent-ng-c3434803040=""> 11.13 - Pour certains champs de saisie, absence de remplissage automatique pour faciliter le remplissage automatique des champs avec les données de l’utilisateur. </li>
+											</ul>
+											<h4 _ngcontent-ng-c3434803040="">Navigation</h4>
+											<ul _ngcontent-ng-c3434803040="" class="custom-list">
+												<li _ngcontent-ng-c3434803040="">12.1 - Absence de moteur de recherche ou de plan de site.</li>
+												<li _ngcontent-ng-c3434803040="">12.7 - Absence de lien d’évitement ou d’accès rapide à la zone de contenu principal.</li>
+												<li _ngcontent-ng-c3434803040="">12.8 - Absence de cohérence dans l’ordre de tabulation.</li>
+											</ul>
+											<h4 _ngcontent-ng-c3434803040="">Consultation</h4>
+											<ul _ngcontent-ng-c3434803040="" class="custom-list">
+												<li _ngcontent-ng-c3434803040="">13.1 - L’utilisateur n’a pas le contrôle de chaque limite de temps modifiant le contenu.</li>
+												<li _ngcontent-ng-c3434803040="">13.3 - Présence de documents bureautiques en téléchargement ne possédant pas d’une version accessible.</li>
+											</ul>
+											<h2 _ngcontent-ng-c3434803040="">Dérogation pour charge disproportionnée</h2>
+											<ul _ngcontent-ng-c3434803040="" class="custom-list">
+												<li _ngcontent-ng-c3434803040="">Aucun élément dérogé pour charge disproportionnée.</li>
+											</ul>
+											<h2 _ngcontent-ng-c3434803040="">Établissement de cette déclaration d’accessibilité</h2>
+											<p _ngcontent-ng-c3434803040="">Cette déclaration d’accessibilité a été établie le 15 novembre 2024.</p>
+											<h2 _ngcontent-ng-c3434803040="">Technologies utilisées pour la réalisation du site</h2>
+											<ul _ngcontent-ng-c3434803040="" class="custom-list">
+												<li _ngcontent-ng-c3434803040="">HTML 5</li>
+												<li _ngcontent-ng-c3434803040="">CSS</li>
+												<li _ngcontent-ng-c3434803040="">JavaScript</li>
+											</ul>
+											<h2 _ngcontent-ng-c3434803040="">Environnement de test</h2>
+											<p _ngcontent-ng-c3434803040=""> Les vérifications de restitution de contenus ont été réalisées sur la base de la combinaison fournie par la base de référence du RGAA 4.1.2, avec les versions suivantes : </p>
+											<ul _ngcontent-ng-c3434803040="" class="custom-list">
+												<li _ngcontent-ng-c3434803040="">NVDA 2024.4.1 et Firefox 132.0.2</li>
+												<li _ngcontent-ng-c3434803040="">VoiceOver macOS Sequoia 15.1 et Safari 18.1</li>
+											</ul>
+											<h2 _ngcontent-ng-c3434803040="">Outils pour évaluer l’accessibilité</h2>
+											<ul _ngcontent-ng-c3434803040="" class="custom-list">
+												<li _ngcontent-ng-c3434803040="">Barre extension de contrôle de taux de contraste WCAG Color Contrast Checker</li>
+												<li _ngcontent-ng-c3434803040="">Barre extension Assistant RGAA V4.1.2 Urbilog Compéthance EA</li>
+												<li _ngcontent-ng-c3434803040="">Barre extension Web Developer toolbar</li>
+												<li _ngcontent-ng-c3434803040="">Inspecteur du navigateur</li>
+											</ul>
+											<h2 _ngcontent-ng-c3434803040="">Pages du site ayant fait l’objet de la vérification de conformité</h2>
+											<ul _ngcontent-ng-c3434803040="" class="custom-list">
+												<li _ngcontent-ng-c3434803040=""> Authentification - <a _ngcontent-ng-c3434803040="" href="https://www.ecoledirecte.com/login">https://www.ecoledirecte.com/login</a></li>
+												<li _ngcontent-ng-c3434803040=""> Consultation cahier de textes - <a _ngcontent-ng-c3434803040="" href="https://www.ecoledirecte.com/X/XXXX/CahierDeTexte">https://www.ecoledirecte.com/X/XXXX/CahierDeTexte</a></li>
+												<li _ngcontent-ng-c3434803040=""> Aide (documents téléchargeables) - <a _ngcontent-ng-c3434803040="" href="https://www.ecoledirecte.com/Aides">https://www.ecoledirecte.com/Aides</a></li>
+												<li _ngcontent-ng-c3434803040=""> Vos informations - <a _ngcontent-ng-c3434803040="" href="https://www.ecoledirecte.com/F/FamilleCoordonnees">https://www.ecoledirecte.com/F/FamilleCoordonnees</a></li>
+												<li _ngcontent-ng-c3434803040=""> Situation financière - <a _ngcontent-ng-c3434803040="" href="https://www.ecoledirecte.com/Compte">https://www.ecoledirecte.com/Compte</a></li>
+												<li _ngcontent-ng-c3434803040=""> Paiements en ligne - <a _ngcontent-ng-c3434803040="" href="https://www.ecoledirecte.com/Paiements">https://www.ecoledirecte.com/Paiements</a></li>
+												<li _ngcontent-ng-c3434803040=""> Messagerie - <a _ngcontent-ng-c3434803040="" href="https://www.ecoledirecte.com/X/XXXX/Messagerie">https://www.ecoledirecte.com/X/XXXX/Messagerie</a></li>
+												<li _ngcontent-ng-c3434803040=""> Documents - <a _ngcontent-ng-c3434803040="" href="https://www.ecoledirecte.com/Documents/telechargements">https://www.ecoledirecte.com/Documents/telechargements</a></li>
+												<li _ngcontent-ng-c3434803040=""> Formulaires et sondages - <a _ngcontent-ng-c3434803040="" href="https://www.ecoledirecte.com/X/XXXX/formulaires-et-sondages">https://www.ecoledirecte.com/X/XXXX/formulaires-et-sondages</a></li>
+												<li _ngcontent-ng-c3434803040=""> Espace de travail - <a _ngcontent-ng-c3434803040="" href="https://www.ecoledirecte.com/X/XXX/EspacesTravail">https://www.ecoledirecte.com/X/XXX/EspacesTravail</a></li>
+												<li _ngcontent-ng-c3434803040=""> Dossier d’inscription - <a _ngcontent-ng-c3434803040="" href="https://www.ecoledirecte.com/X/XXX/EspacesTravail">https://www.ecoledirecte.com/X/XXX/EspacesTravail</a></li>
+												<li _ngcontent-ng-c3434803040=""> Votre compte - <a _ngcontent-ng-c3434803040="" href="https://www.ecoledirecte.com/utilisateur/personnalisation">https://www.ecoledirecte.com/utilisateur/personnalisation</a></li>
+												<li _ngcontent-ng-c3434803040=""> Notes - <a _ngcontent-ng-c3434803040="" href="https://www.ecoledirecte.com/E/XXX/Notes">https://www.ecoledirecte.com/E/XXX/Notes</a></li>
+											</ul>
+											<h2 _ngcontent-ng-c3434803040="">Voies de recours</h2>
+											<p _ngcontent-ng-c3434803040="">Cette procédure est à utiliser dans le cas suivant.</p>
+											<p _ngcontent-ng-c3434803040=""> Vous avez signalé au responsable du site internet un défaut d’accessibilité qui vous empêche d’accéder à un contenu ou à un des services du portail et vous n’avez pas obtenu de réponse satisfaisante. </p>
+											<ul _ngcontent-ng-c3434803040="" class="custom-list">
+												<li _ngcontent-ng-c3434803040=""> Écrire un message au Défenseur des droits : <a _ngcontent-ng-c3434803040="" href="https://formulaire.defenseurdesdroits.fr/">https://formulaire.defenseurdesdroits.fr/</a></li>
+												<li _ngcontent-ng-c3434803040=""> Contacter le délégué du Défenseur des droits dans votre région : <a _ngcontent-ng-c3434803040="" href="https://www.defenseurdesdroits.fr/saisir/delegues">https://www.defenseurdesdroits.fr/saisir/delegues</a></li>
+												<li _ngcontent-ng-c3434803040="">Envoyer un courrier par la poste (gratuit, ne pas mettre de timbre) : Défenseur des droits Libre réponse 71120 75342 Paris CEDEX 07</li>
+											</ul>
+										</div>
+									</div>
+								</ed-accessibilite><!----><!---->
+							</div>
+							<div class="modal-footer"><!----></div>
+						</ed-dialog-modal>
+					</div>
+				</div>
+				<div tabindex="0" class="cdk-visually-hidden cdk-focus-trap-anchor" aria-hidden="true"></div>
+			</modal-container>
+
+		</div>
+
+		<!-- Panneau Problème Connexion -->
+		<div class="reveal" id="flPbConnexionPanel">
+			<div class="MJX_LiveRegion" style="background-color: white;" aria-live="assertive">
+				<div></div>
+			</div>
+			<div class="MJX_LiveRegion" style="background-color: white;" aria-live="assertive">
+				<div></div>
+			</div>
+			<div class="MJX_HoverRegion" style="background-color: white;">
+				<div style="line-height: 0;"></div>
+			</div>
+			<div class="MJX_ToolTip" style="background-color: white;">
+				<div></div>
+			</div>
+			<div class="MJX_ToolTip" style="background-color: white;">
+				<div></div>
+			</div>
+			<div class="MJX_ToolTip" style="background-color: white;">
+				<div></div>
+			</div>
+			<bs-modal-backdrop class="modal-backdrop fade show"></bs-modal-backdrop>
+			<modal-container role="dialog" tabindex="-1" class="modal fade show" style="display: block;" aria-modal="true">
+				<div tabindex="0" class="cdk-visually-hidden cdk-focus-trap-anchor" aria-hidden="true"></div>
+				<div role="document" focustrap="" class="modal-dialog">
+					<div class="modal-content">
+						<ed-modal-aide-connexion>
+							<div class="modal-header">
+								<h3 class="modal-title">Des difficultés pour vous connecter ?</h3>
+								<button edautofocus="" type="button" aria-label="Fermer la fenêtre d'aide à la connexion" class="btn-close d-print-none focus-init" onclick="clPbConnexion()"></button>
+							</div>
+							<div class="modal-body">
+								<h4>Si vous avez déjà personnalisé votre compte d'accès</h4>
+								<span> Vous pouvez utiliser le lien <a href="mot-de-passe-oublie.html" class="focus-blue link-color">'mot de passe oublié'</a> en indiquant l'email ou le numéro de téléphone que vous avez fourni lors de la création de votre compte. <br> Si cette procédure échoue, vous devez contacter directement votre établissement afin qu'il réinitialise votre compte d'accès. </span>
+								<h4>Si vous n'avez jamais personnalisé votre compte d'accès</h4>
+								<span> Dans ce cas, le lien 'mot de passe oublié' ne fonctionnera pas. <br> Vous devez utiliser votre code de première connexion fourni par votre établissement. </span>
+							</div>
+							<div class="modal-footer"></div>
+						</ed-modal-aide-connexion>
+					</div>
+				</div>
+				<div tabindex="0" class="cdk-visually-hidden cdk-focus-trap-anchor" aria-hidden="true"></div>
+			</modal-container>
+		</div>
+
+
 		<!-- ===================== ÉCRAN 2 : RÉVÉLATION ===================== -->
 		<div class="reveal" id="screenReveal">
 			<div class="rv-box">
@@ -984,6 +1242,12 @@
 			function flTab(el){ document.querySelectorAll('.fl-tab').forEach(t=>t.classList.remove('active')); el.classList.add('active'); }
 			function flEye(){ const i=document.getElementById('flPwd'); i.type=i.type==='password'?'text':'password'; }
 			function flAdmin(){ document.getElementById('flAdminPanel').classList.toggle('show'); flRender(); }
+			function flMentions(){ document.getElementById('flMentionsPanel').style.display = "block"; }
+			function clMentions(){ document.getElementById('flMentionsPanel').style.display = "none"; }
+			function flAccessibilite(){ document.getElementById('flAccessibilitePanel').style.display = "block"; }
+			function clAccessibilite(){ document.getElementById('flAccessibilitePanel').style.display = "none"; }
+			function flPbConnexion(){ document.getElementById('flPbConnexionPanel').style.display = "block"; }
+			function clPbConnexion(){ document.getElementById('flPbConnexionPanel').style.display = "none"; }
 
 			function flSubmit(){
 				const l=document.getElementById('flLogin').value.trim();
